@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segues_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxy-RN-JNR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="s3g-RP-OYB">
+                                        <barButtonItem key="rightBarButtonItem" title="Next" id="feZ-7B-B0i">
+                                            <connections>
+                                                <segue destination="zkh-S5-EPM" kind="show" id="ZjE-Ls-i4X"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Lxy-RN-JNR" secondAttribute="trailing" id="OtJ-nf-pz5"/>
+                            <constraint firstItem="Lxy-RN-JNR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PeU-sx-sYv"/>
+                            <constraint firstItem="Lxy-RN-JNR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qTP-BW-Qhq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B1b-Qf-sUo">
+            <objects>
+                <viewController id="zkh-S5-EPM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sju-hJ-1c8"/>
+                        <viewControllerLayoutGuide type="bottom" id="rjv-yo-yQC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Njb-dh-fF3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSg-rh-hIb">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="9KF-6e-FCT">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="IeK-qH-z8D"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KSg-rh-hIb" firstAttribute="top" secondItem="sju-hJ-1c8" secondAttribute="bottom" id="H6X-83-uqB"/>
+                            <constraint firstItem="KSg-rh-hIb" firstAttribute="leading" secondItem="Njb-dh-fF3" secondAttribute="leading" id="dm5-kp-xfP"/>
+                            <constraint firstAttribute="trailing" secondItem="KSg-rh-hIb" secondAttribute="trailing" id="vS6-yN-owK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4j9-LU-oCR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjt-rX-OqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="394"/>
+        </scene>
+    </scenes>
+</document>
